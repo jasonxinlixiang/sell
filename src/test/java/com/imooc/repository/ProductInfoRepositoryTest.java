@@ -1,6 +1,7 @@
 package com.imooc.repository;
 
 import com.imooc.dataobject.ProductInfo;
+import com.imooc.enums.ProductStatusEnum;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,7 +39,7 @@ public class ProductInfoRepositoryTest {
 
     @Test
     public void findByProductStatus() {
-        List<ProductInfo> result = repository.findByProductStatus(0);
+        List<ProductInfo> result = repository.findByProductStatus(ProductStatusEnum.UP.getCode());
         Assert.assertNotEquals(0, result.size());
     }
 }
