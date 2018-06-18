@@ -7,9 +7,16 @@ Restful
 后端： Spring Boot + （BootStrap, Freemarker , jQuery）
 
 Spring Boot
-数据库方面                    缓存方面                              消息推送方面
-SpringBoot + JPA             SpringBoot + Redis                   WebSocket
-SpringBoot + MyBatis         分布式session, 分布式锁
+1.数据库方面                    
+SpringBoot + JPA             
+SpringBoot + MyBatis        
+
+2.缓存方面  
+SpringBoot + Redis
+分布式session, 分布式锁
+
+3.消息推送方面
+WebSocket
 
 角色划分
 买家（手机端） 
