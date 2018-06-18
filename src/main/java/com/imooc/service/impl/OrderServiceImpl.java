@@ -2,7 +2,7 @@ package com.imooc.service.impl;
 
 import com.imooc.dataobject.OrderDetail;
 import com.imooc.dataobject.OrderMaster;
-import com.imooc.dataobject.OrderMaster2OrderDTOConverter;
+import com.imooc.converter.OrderMaster2OrderDTOConverter;
 import com.imooc.dataobject.ProductInfo;
 import com.imooc.dto.CartDTO;
 import com.imooc.dto.OrderDTO;
