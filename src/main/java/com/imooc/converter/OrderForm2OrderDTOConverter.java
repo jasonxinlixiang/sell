@@ -22,7 +22,7 @@ public class OrderForm2OrderDTOConverter {
         orderDTO.setBuyerName(orderForm.getName());
         orderDTO.setBuyerPhone(orderForm.getPhone());
         orderDTO.setBuyerAddress(orderForm.getAddress());
-        orderDTO.setBuyerOpenid(orderForm.getOpenid());
+        orderDTO.setBuyerOpenid("oTgZpwcDx4xfGs9XtQeMmN0miMbw");
 
         List<OrderDetail> orderDetailList = new ArrayList<>();
         try {

@@ -26,7 +26,7 @@ public class PayServiceImplTest {
 
 	@Test
 	public void create() {
-		OrderDTO orderDTO = this.orderService.findOne("");
+		OrderDTO orderDTO = this.orderService.findOne("1529304150849308234");
 		payService.create(orderDTO);
 	}
 }
