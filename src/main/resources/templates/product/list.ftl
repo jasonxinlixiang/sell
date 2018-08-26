@@ -42,7 +42,7 @@
                         <td>${productInfo.createTime}</td>
                         <td>${productInfo.updateTime}</td>
                         <td>
-                            <a href="/sell/seller/product/index?productId=${productInfo.productId}">详情</a>
+                            <a href="/sell/seller/product/index?productId=${productInfo.productId}">修改</a>
                         </td>
                         <td>
                             <#if productInfo.getProductStatusEnum().message == "在架">
