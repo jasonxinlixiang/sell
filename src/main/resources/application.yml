@@ -15,7 +15,14 @@ wechat:
   mpAppId: wx7af0feed355ea0dc
   mpAppPayId: wxd898fcb01713c658
   mpAppSecret: 7fe16124474860430fa8862deabddca9
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
   mchId: 1483469312
   mchKey: C5245D70627C1F8E9964D494B0735025
   keyPath: /var/weixin_cert/h5.p12
   notifyUrl: http://demosell.natapp1.cc/sell/pay/notify
+
+projectUrl:
+  wechatMpAuthorize: http://demosell.natapp1.cc
+  wechatOpenAuthorize: http://demosell.natapp1.cc
+  sell:
