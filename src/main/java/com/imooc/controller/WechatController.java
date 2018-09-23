@@ -76,7 +76,7 @@ public class WechatController {
         }
         log.info("wxMpOAuth2AccessToken={}", wxMpOAuth2AccessToken);
         String openId = wxMpOAuth2AccessToken.getOpenId();
-        String returnUrl = "http://demosell.natapp1.cc/sell/seller/order/list";
+        String returnUrl = "http://demosell.natapp1.cc/sell/seller/login";
         return "redirect:" + returnUrl + "?openid=" + openId;
     }
 }
