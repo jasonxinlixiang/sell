@@ -1,5 +1,6 @@
 package com.imooc.service.impl;
 
+import com.imooc.config.WechatAccountConfig;
 import com.imooc.dto.OrderDTO;
 import com.imooc.service.PushMessageService;
 import lombok.extern.slf4j.Slf4j;
@@ -20,13 +21,16 @@ public class PushMessageServiceImpl implements PushMessageService {
     @Autowired
     private WxMpService wxMpService;
 
+    @Autowired
+    private WechatAccountConfig accountConfig;
+
     @Override
     public void orderStatus(OrderDTO orderDTO) {
         String appId = wxMpService.getWxMpConfigStorage().getAppId();
         String appSecret = wxMpService.getWxMpConfigStorage().getSecret();
         WxMpTemplateMessage templateMessage = new WxMpTemplateMessage();
-        templateMessage.setTemplateId("QDz0uLmhMjh2nTJOf8go5pAwbl_bMXSRDqa42HMpKuI");
-        templateMessage.setToUser("oTKE20iJ3Jp6y0VlqS1MqlcwzMHE");
+        templateMessage.setTemplateId(accountConfig.getTemplateId().get("orderStatus"));
+        templateMessage.setToUser(orderDTO.getBuyerOpenid());
         List<WxMpTemplateData> data = Arrays.asList(
                 new WxMpTemplateData("first", "亲，请记得收货"),
                 new WxMpTemplateData("keyword1", "微信点餐"),

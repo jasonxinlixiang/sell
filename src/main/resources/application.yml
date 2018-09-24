@@ -25,6 +25,8 @@ wechat:
   mchKey: C5245D70627C1F8E9964D494B0735025
   keyPath: /var/weixin_cert/h5.p12
   notifyUrl: http://demosell.natapp1.cc/sell/pay/notify
+  templateId:
+    orderStatus: QDz0uLmhMjh2nTJOf8go5pAwbl_bMXSRDqa42HMpKuI
 
 projectUrl:
   wechatMpAuthorize: http://demosell.natapp1.cc
