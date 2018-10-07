@@ -32,3 +32,7 @@ projectUrl:
   wechatMpAuthorize: http://demosell.natapp1.cc
   wechatOpenAuthorize: http://demosell.natapp1.cc
   sell: http://demosell.natapp1.cc
+logging:
+  level:
+    com.imooc.dataobject.mapper: trace
+
